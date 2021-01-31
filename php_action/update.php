@@ -10,7 +10,7 @@ if($_POST) {
 	$id = $_POST['member_id'];
 	$name = $_POST['editName'];
 	$email = $_POST['editEmail'];
-	$contact = $_POST['editContact'];
+	$contact = preg_replace('/[^a-z0-9]/i', '', $_POST['editContact']);//remove mask to input
 	$birthday = $_POST['editBirthday'];
 	$active = $_POST['editActive'];
 

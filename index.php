@@ -56,7 +56,7 @@
 
 <div class="container">
     <div class="row">
-        <div class="table-responsive">
+        <div class="table">
             <br /> <br /> <br />
             <div class="messages"></div>
             <table class="table table-striped table-bordered table-hover" id="manageMemberTable">
@@ -211,12 +211,6 @@
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 <!-- /edit modal -->
-
-<!-- Copyright -->
-<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-    © 2021 Made By: <a class="text-dark" href="https://github.com/marciokriiger">Marcio Kriiger</a>
-    <br />Feel free to use!
-</div>
 
 </body>
 </html>

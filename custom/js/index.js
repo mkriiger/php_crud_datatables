@@ -205,6 +205,7 @@ function editMember(id = null) {
 					var editName = $("#editName").val();
 					var editEmail = $("#editEmail").val();
 					var editContact = $("#editContact").val();
+					editContact = editContact.replace(/\D+/g, '');//eliminates special caracters to validate size
 					var editBirthday = $("#editBirthday").val();
 					var editActive = $("#editActive").val();
 
@@ -219,6 +220,10 @@ function editMember(id = null) {
 					if(editEmail == "") {
 						$("#editEmail").closest('.form-group').addClass('has-error');
 						$("#editEmail").after('<p class="text-danger">The Email field is required</p>');
+					} else if (!validateEmail(editEmail)){
+						editEmail = "";
+						$("#editEmail").closest('.form-group').addClass('has-error');
+						$("#editEmail").after('<p class="text-danger">You have entered an invalid email address</p>');
 					} else {
 						$("#editEmail").closest('.form-group').removeClass('has-error');
 						$("#editEmail").closest('.form-group').addClass('has-success');				
@@ -227,6 +232,10 @@ function editMember(id = null) {
 					if(editContact == "") {
 						$("#editContact").closest('.form-group').addClass('has-error');
 						$("#editContact").after('<p class="text-danger">The Contact field is required</p>');
+					} else if(editContact.length < 10){								
+						editContact = "";
+						$("#editContact").closest('.form-group').addClass('has-error');
+						$("#editContact").after('<p class="text-danger">The contact number must have at least 10 digits</p>'); 
 					} else {
 						$("#editContact").closest('.form-group').removeClass('has-error');
 						$("#editContact").closest('.form-group').addClass('has-success');				
