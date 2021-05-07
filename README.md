@@ -4,7 +4,7 @@
 ## Demo
 
 Sceenshot (click to see demonstration on YouTube)
-[![Project demonstration](images/php_crud_databases.png)](https://youtu.be/joVFPVTA1K0)
+[![Project demonstration](images/php_crud_databases.PNG)](https://youtu.be/joVFPVTA1K0)
 
 ## Technologies
 
