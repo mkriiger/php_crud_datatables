@@ -14,6 +14,6 @@ Sceenshot (click to see demonstration on YouTube)
 
 ## Meta
 
-Marcio Kriiger - [in/marciokriiger](https://www.linkedin.com/in/marciokriiger/) - marciovonkriiger@gmail.com
+Marcio Kriiger - [in/mkriiger](https://www.linkedin.com/in/mkriiger/) - marciovonkriiger@gmail.com
 
-[https://github.com/marciokriiger/php_crud_datatables](https://github.com/marciokriiger)
+[https://github.com/mkriiger/php_crud_datatables](https://github.com/mkriiger)
